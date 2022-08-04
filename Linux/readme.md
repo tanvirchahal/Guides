@@ -36,6 +36,31 @@
 * `rm [options] <file>` Removing a File (and non empty Directories)
 * `rm -r <directory>` Removing non empty directories
 
+## Vi Editor
+
+* `vi <file>` Single command line argument which is the file you would like to edit.
+* `i` Press to get into insert mode
+* `esc` to get back into edit mode
+* `:q!` - discard all changes, since the last save, and exit
+* `:w` - save file but don't exit
+* `:wq` - again, save and exit
+* `cat <file>` to view files (Can also be used for concatenating files)
+* `less <file>` to view large / long files
+* `Arrow keys` - move the cursor around
+* `j, k, h, l` - move the cursor down, up, left and right (similar to the arrow keys)
+* `^ (caret)` - move cursor to beginning of current line
+* `$` - move cursor to end of the current line
+* `nG` - move to the nth line (eg 5G moves to 5th line)
+* `G` - move to the last line
+* `w` - move to the beginning of the next word
+* `nw` - move forward n word (eg 2w moves two words forwards)
+* `b` - move to the beginning of the previous word
+* `nb` - move back n word
+* `{` - move backward one paragraph
+* `}` - move forward one paragraph
+* `u` - Undo the last action (you may keep pressing u to keep undoing)
+* `U` (Note: capital) - Undo all changes to the current line
+
 
     
 
