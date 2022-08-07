@@ -1,6 +1,6 @@
 # Basic Linux Commands
 
-## Tools
+## Tools 🔨
 * Terminator (For Terminal)
 * Ubuntu or CentOS
 
@@ -13,7 +13,7 @@
 * `..` (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. eg if you were in the path /home/ryan you could run the command ls `../../` and this would do a listing of the root directory.
 * `cd [location]` to move around folders
 
-## Files
+## Files 🗂
 
 * `file` obtain information about what type of file a file or directory is.
 * `ls -a` List the contents of a directory, including hidden files.
@@ -36,7 +36,7 @@
 * `rm [options] <file>` Removing a File (and non empty Directories)
 * `rm -r <directory>` Removing non empty directories
 
-## Vi Editor
+## Vi Editor 📟
 
 * `vi <file>` Single command line argument which is the file you would like to edit.
 * `i` Press to get into insert mode
@@ -60,6 +60,24 @@
 * `}` - move forward one paragraph
 * `u` - Undo the last action (you may keep pressing u to keep undoing)
 * `U` (Note: capital) - Undo all changes to the current line
+
+## Wildcards 🦄
+
+* `*` - represents zero or more characters
+* `?` - represents a single character
+* `[]` - represents a range of characters
+
+## Permissions 🔐
+
+* `r` read - you may view the contents of the file.
+* `w` write - you may change the contents of the file.
+* `x` execute - you may execute or run the file if it is a program or script.
+
+For every file we define 3 sets of people for whom we may specify permissions.
+
+* `owner` - a single person who owns the file. (typically the person who created the file but ownership may be granted to some one else by certain users)
+* `group` - every file belongs to a single group.
+* `others` - everyone else who is not in the group or the owner.
 
 
     
