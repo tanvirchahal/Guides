@@ -1,1 +1,0 @@
-# Quick guide to perl
