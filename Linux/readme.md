@@ -8,6 +8,7 @@
 * `pwd` for Print working directory
 * `ls` for list contents of directory
 * `ls -l` for long list of contents
+* `ls -ld` for directory contents
 * `~` (tilde) - This is a shortcut for your home directory. eg, if your home directory is `/home/ryan` then you could refer to the directory Documents with the path `/home/ryan/Documents` or `~/Documents`
 *  `.` (dot) - This is a reference to your current directory. eg in the example above we referred to Documents on line 4 with a relative path. It could also be written as `./Documents` (Normally this extra bit is not required but in later sections we will see where it comes in handy).
 * `..` (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. eg if you were in the path /home/ryan you could run the command ls `../../` and this would do a listing of the root directory.
@@ -78,6 +79,39 @@ For every file we define 3 sets of people for whom we may specify permissions.
 * `owner` - a single person who owns the file. (typically the person who created the file but ownership may be granted to some one else by certain users)
 * `group` - every file belongs to a single group.
 * `others` - everyone else who is not in the group or the owner.
+
+```
+$ ls -l /home/tanvir/linuxtutorialwork/frog.png
+
+$ -rwxr----x 1 harry users 2.7K Jan 4 07:32 /home/tanvir/linuxtutorialwork/frog.png
+```
+
+In the above example the first 10 characters of the output are what we look at to identify permissions.
+
+* The first character identifies the file type. If it is a dash ( - ) then it is a normal file. If it is a d then it is a directory.
+* The following 3 characters represent the permissions for the owner. A letter represents the presence of a permission and a dash ( - ) represents the absence of a permission. In this example the owner has all permissions (read, write and execute).
+* The following 3 characters represent the permissions for the group. In this example the group has the ability to read but not write or execute. Note that the order of permissions is always read, then write then execute.
+* Finally the last 3 characters represent the permissions for others (or everyone else). In this example they have the execute permission and nothing else.
+
+* `chmod [permissions] [path]` change permissions
+
+chmod has permission arguments that are made up of 3 components
+
+    * Who are we changing the permission for? [ugoa] - user (or owner), group, others, all
+    * Are we granting or revoking the permission - indicated with either a plus ( + ) or minus ( - )
+    * Which permission are we setting? - read ( r ), write ( w ) or execute ( x )
+
+Examples: 
+* `chmod g+x frog.png` Add execute permissions to group
+* `chmod g+wx frog.png` Add write and execute permissions to group
+* `chmod u-w frog.png` Revoke write permission permissions from user
+
+
+
+
+
+
+
 
 
     
