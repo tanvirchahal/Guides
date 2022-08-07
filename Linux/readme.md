@@ -4,7 +4,7 @@
 * Terminator (For Terminal)
 * Ubuntu or CentOS
 
-## Navigation Commands
+## Navigation Commands 🗺
 * `pwd` for Print working directory
 * `ls` for list contents of directory
 * `ls -l` for long list of contents
